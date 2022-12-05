@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="cn-zh" data-default-color-scheme=auto>
+<html lang="zh-CN" data-default-color-scheme=auto>
 
 
 
@@ -19,28 +19,28 @@
     <meta name="description" content="此靶机根据某博彩网站的真实环境所搭建。搭建环境在VMwareWorkstation中导入虚拟机 开启虚拟机并登陆root账号，并查看apache服务是否开启 12ps -ef |grep httpdps -aux | grep httpd  查看ip地址 1ifconfig  渗透过程进入登录界面 注册账号并进入网站 点击商品 url：http:&#x2F;&#x2F;192.168.206.128&#x2F;index&#x2F;go">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对某靶机环境进行渗透测试">
-<meta property="og:url" content="http://example.com/2022/11/28/%E5%AF%B9%E6%9F%90%E9%9D%B6%E6%9C%BA%E8%BF%9B%E8%A1%8C%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:url" content="http://mar1oo.github.io/2022/11/28/%E5%AF%B9%E6%9F%90%E9%9D%B6%E6%9C%BA%E8%BF%9B%E8%A1%8C%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="Mario&#39;s SecBlog">
 <meta property="og:description" content="此靶机根据某博彩网站的真实环境所搭建。搭建环境在VMwareWorkstation中导入虚拟机 开启虚拟机并登陆root账号，并查看apache服务是否开启 12ps -ef |grep httpdps -aux | grep httpd  查看ip地址 1ifconfig  渗透过程进入登录界面 注册账号并进入网站 点击商品 url：http:&#x2F;&#x2F;192.168.206.128&#x2F;index&#x2F;go">
-<meta property="og:locale" content="cn_ZH">
-<meta property="og:image" content="http://example.com/images/9c47491f80d2fe12fe91697501b1f82.png">
-<meta property="og:image" content="http://example.com/images/8108a693a1e75ef188444c52ad689fa.png">
-<meta property="og:image" content="http://example.com/images/a27143effacc23b122a0cd5c836d906.png">
-<meta property="og:image" content="http://example.com/images/101110.png">
-<meta property="og:image" content="http://example.com/images/101529.png">
-<meta property="og:image" content="http://example.com/images/103447.png">
-<meta property="og:image" content="http://example.com/images/135657.png">
-<meta property="og:image" content="http://example.com/images/134520.png">
-<meta property="og:image" content="http://example.com/images/140639.png">
-<meta property="og:image" content="http://example.com/images/141259.png">
-<meta property="og:image" content="http://example.com/images/143456.png">
-<meta property="og:image" content="http://example.com/images/144813.png">
-<meta property="og:image" content="http://example.com/images/154129.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://mar1oo.github.io/images/9c47491f80d2fe12fe91697501b1f82.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/8108a693a1e75ef188444c52ad689fa.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/a27143effacc23b122a0cd5c836d906.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/101110.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/101529.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/103447.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/135657.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/134520.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/140639.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/141259.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/143456.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/144813.png">
+<meta property="og:image" content="http://mar1oo.github.io/images/154129.png">
 <meta property="article:published_time" content="2022-11-28T01:53:15.010Z">
 <meta property="article:modified_time" content="2022-12-05T08:28:36.035Z">
 <meta property="article:author" content="Mario">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/9c47491f80d2fe12fe91697501b1f82.png">
+<meta name="twitter:image" content="http://mar1oo.github.io/images/9c47491f80d2fe12fe91697501b1f82.png">
   
   
   
@@ -82,7 +82,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"mar1oo.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -128,7 +128,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                Startseite
+                首页
               </a>
             </li>
           
@@ -140,7 +140,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                Archiv
+                归档
               </a>
             </li>
           
@@ -152,7 +152,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                Kategorien
+                分类
               </a>
             </li>
           
@@ -164,7 +164,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                Schlagwörter
+                标签
               </a>
             </li>
           
@@ -176,7 +176,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                Über
+                关于
               </a>
             </li>
           
@@ -221,7 +221,7 @@
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
         <time datetime="2022-11-28 09:53" pubdate>
-          November 28, 2022 am
+          2022年11月28日 上午
         </time>
       </span>
     
@@ -232,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          552 wörter
+          552 字
         
       </span>
     
@@ -243,7 +243,7 @@
         
         
         
-          5 minuten
+          5 分钟
         
       </span>
     
@@ -286,7 +286,7 @@
               <p class="note note-info">
                 
                   
-                    Geändert am December 5, 2022 pm
+                    本文最后更新于：2022年12月5日 下午
                   
                 
               </p>
@@ -334,36 +334,36 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>对某靶机环境进行渗透测试</div>
-      <div>http://example.com/2022/11/28/对某靶机进行渗透测试/</div>
+      <div>http://mar1oo.github.io/2022/11/28/对某靶机进行渗透测试/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Beitragsautor</div>
+          <div>作者</div>
           <div>Mario</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Veröffentlicht am</div>
-          <div>November 28, 2022</div>
+          <div>发布于</div>
+          <div>2022年11月28日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Geändert am</div>
-          <div>December 5, 2022</div>
+          <div>更新于</div>
+          <div>2022年12月5日</div>
         </div>
       
       
         <div class="license-meta-item">
-          <div>Urheberrechtshinweis</div>
+          <div>许可协议</div>
           <div>
             
               
               
                 <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
                     <i class="iconfont icon-by"></i>
                   </span>
                 </a>
@@ -402,7 +402,7 @@
       
   <aside class="sidebar" style="margin-left: -1rem">
     <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Inhaltsverzeichnis</p>
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
   <div class="toc-body" id="toc-body"></div>
 </div>
 
@@ -457,7 +457,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -465,7 +465,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -665,7 +665,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
 </body>
 </html>
