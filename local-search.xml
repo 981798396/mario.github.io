@@ -8,7 +8,7 @@
     <link href="/2023/03/24/%E2%80%9C%E5%85%8D%E6%9D%80shellcode%E5%8A%A0%E8%BD%BD%E5%99%A8%E2%80%94%E2%80%94%E5%8A%A0%E5%AF%86%E6%B7%B7%E6%B7%86%E7%B3%BB%E5%88%97%E2%80%9D/"/>
     <url>/2023/03/24/%E2%80%9C%E5%85%8D%E6%9D%80shellcode%E5%8A%A0%E8%BD%BD%E5%99%A8%E2%80%94%E2%80%94%E5%8A%A0%E5%AF%86%E6%B7%B7%E6%B7%86%E7%B3%BB%E5%88%97%E2%80%9D/</url>
     
-    <content type="html"><![CDATA[<p>#一、Python加载shellcode免杀介绍<br>由于python使⽤比较简单⽅便，所以现在很多免杀都是使用python来对shellcode进行处理，做一些加密、混淆，用python来实现各种加密也比较简单而且免杀效果相对不错，唯⼀不足的地方就是py编译生成的exe文件比较大（本实验将介绍如何缩小python代码）<br>VirusTotal：<br><img src="/../images/20230324172413.png"><br>微步：<br><img src="/../images/20230324172811.png"></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="Python加载shellcode免杀介绍"><a href="#Python加载shellcode免杀介绍" class="headerlink" title="Python加载shellcode免杀介绍"></a>Python加载shellcode免杀介绍</h3><p>由于python使⽤比较简单⽅便，所以现在很多免杀都是使用python来对shellcode进行处理，做一些加密、混淆，用python来实现各种加密也比较简单而且免杀效果相对不错，唯⼀不足的地方就是py编译生成的exe文件比较大（本文将介绍如何缩小python代码）<br>VirusTotal：<br><img src="/../images/20230324172413.png"><br>微步：<br><img src="/../images/20230324172811.png"></p>]]></content>
     
     
     
